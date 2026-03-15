@@ -6,7 +6,7 @@ def run_ingestion():
     print("Downloading and loading documents from S3...")
 
     docs = load_documents_from_s3(
-        bucket="rag-api-deployment-data",
+        bucket="rag-api-deployment",
         key="leave.pdf"
     )
 
