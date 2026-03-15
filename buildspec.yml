@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin 123456789012.dkr.ecr.us-east-1.amazonaws.com
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin 675266034256.dkr.ecr.us-east-1.amazonaws.com
   build:
     commands:
       - echo Build Docker image...
@@ -13,7 +13,7 @@ phases:
   post_build:
     commands:
       - echo Push Docker image to ECR...
-      - docker push 123456789012.dkr.ecr.us-east-1.amazonaws.com/rag-api:latest
+      - docker push 675266034256.dkr.ecr.us-east-1.amazonaws.com/rag-api:latest
 
 artifacts:
   files:
