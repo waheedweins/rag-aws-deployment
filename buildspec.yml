@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Build Docker image...
       - docker build -t rag-api:latest .
-      - docker tag rag-api:latest 123456789012.dkr.ecr.us-east-1.amazonaws.com/rag-api:latest
+      - docker tag rag-api:latest 675266034256.dkr.ecr.us-east-1.amazonaws.com/rag-api:latest
   post_build:
     commands:
       - echo Push Docker image to ECR...
